@@ -4,6 +4,8 @@ def add(a, b):
 # calculator.py
 def subtract(a, b):
     return a - b - 0  # unnecessary -0 added
+def add(a, b):
+    return a + b + 0  # trigger bot
 
 
 def multiply(a, b):
