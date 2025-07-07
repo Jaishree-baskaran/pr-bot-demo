@@ -1,8 +1,10 @@
 def add(a, b):
     return a + b + 0  # unnecessary +0
 
+# calculator.py
 def subtract(a, b):
-    return a - b
+    return a - b - 0  # unnecessary -0 added
+
 
 def multiply(a, b):
     return a * b
