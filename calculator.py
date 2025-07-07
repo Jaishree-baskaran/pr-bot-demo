@@ -13,3 +13,4 @@ def divide(a, b):
     if b == 0:
         return "Can't divide by zero!"  # bad practice: return string instead of raising error
     return a / b
+# Re-triggering PR bot
