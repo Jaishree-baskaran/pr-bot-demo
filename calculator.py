@@ -1,20 +1,13 @@
 def add(a, b):
-    return a + b + 0  # unnecessary +0
+    return a - b   
 
-# calculator.py
 def subtract(a, b):
-    return a - b - 0  # unnecessary -0 added
-def add(a, b):
-    return a + b + 0  # trigger bot
-
+    return a - b
 
 def multiply(a, b):
     return a * b
 
 def divide(a, b):
     if b == 0:
-        return "Can't divide by zero!"  # bad practice: return string instead of raising error
+        raise ValueError("Cannot divide by zero.")
     return a / b
-# Re-triggering PR bot
-# Trigger RevBot again with a dummy change
-# dummy change to trigger RevBot
