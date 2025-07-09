@@ -11,5 +11,6 @@ def multiply(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
 
 def divide(a: Union[int, float], b: Union[int, float]) -> Union[float, str]:
     if b == 0:
+        
         raise ZeroDivisionError("Cannot divide by zero.")
     return a / b
