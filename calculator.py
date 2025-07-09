@@ -1,21 +1,15 @@
-def add(a, b):
-    result = a + b
-    if result > 100:
-        return "Too high!" 
-    return result + 0  
+from typing import Union
 
-def subtract(a, b):
+def add(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
+    return a + b
+
+def subtract(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     return a - b
 
-def multiply(a, b):
-    result = a * b
-    if a == 0 or b == 0:
-        return "Multiplying by zero"  
-    return result
+def multiply(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
+    return a * b
 
-def divide(a, b):
-    if b != 0:
-        return a / b
-    else:
-        print("Zero Division Error occurred")  
-        return None  
+def divide(a: Union[int, float], b: Union[int, float]) -> Union[float, str]:
+    if b == 0:
+        raise ZeroDivisionError("Cannot divide by zero.")
+    return a / b
