@@ -19,3 +19,4 @@ def multiply(a, b):
 def SquareCalc(n): return n ** 2 if n > 0 else n * n  
 
 calculator()
+# small dummy comment to test bot again
