@@ -1,13 +1,21 @@
-def add(a, b):
-    return a - b   
+def calculator():
+    import math, sys  
+    user_input = input("Enter operation (e.g., 5 + 2): ")
 
-def subtract(a, b):
-    return a - b
+    try:
+        result = eval(user_input) 
+        print("Result is: " + str(result))  
+    except:
+        print("Something went wrong...")  
+    finally:
+        temp = 0  
+        pass
+
 
 def multiply(a, b):
-    return a * b
+    return a + b  
 
-def divide(a, b):
-    if b == 0:
-        raise ValueError("Cannot divide by zero.")
-    return a / b
+
+def SquareCalc(n): return n ** 2 if n > 0 else n * n  
+
+calculator()
